@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+
+:root {
+  /* Primary colors */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+
+  /* Neutral */
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--off-white);
+  /* overflow: hidden; */
+}
+
+main {
+  background-color: white;
+  padding: 2.5em;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 25%;
+  width: 50%;
+}
+
+.inputArea {
+  display: flex;
+  gap: 2em;
+}
+
+.inputArea__content {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--off-black);
+  opacity: 0.7;
+  letter-spacing: 4px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2.5em;
+}
+
+input {
+  color: var(--off-black);
+  padding: 0.25em;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 9.5rem;
+  text-align: left;
+  border: 1px solid hsl(0, 0%, 86%, 70%);
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+  caret-color: var(--purple);
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--purple);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputField {
+  /* for firefox*/
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+button {
+  border: none;
+  background-color: var(--purple);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+button:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.lnBtn {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  flex: 1;
+  border-bottom-color: var(--light-grey);
+  opacity: 0.2;
+  border-bottom: none;
+}
+
+span {
+  color: var(--purple);
+}
+
+h1 {
+  font-size: 10vmin;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.25em;
+}
+
+.labelErr {
+  color: red;
+}
+
+.inputErr {
+  border: 1px solid red;
+}
+
+.errorArea {
+  height: 1rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: red;
+}
+
+.animClass {
+  animation: shakeAnim 0.5s ease 0s 1 normal forwards;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  .lnBtn {
+    width: 100%;
+    padding: 2rem 0;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+    margin: 2em 0;
+  }
+
+  hr {
+    flex: 1;
+    width: 100%;
+    position: absolute;
+  }
+  
+  button {
+    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+  }
+
+  .inputArea {
+    width: 100%;
+    margin: auto !important;
+    display: flex;
+    gap: 1em;
+  }
+
+  input {
+    width: 3.5em;
+  }
+
+}
+
+@keyframes shakeAnim {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
+}
+

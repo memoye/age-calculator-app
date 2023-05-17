@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> -->
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+  
+  <link rel="stylesheet" href="style.css"> 
+  
+  <title>Age calculator app</title>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main>
+    <section class="inputArea">
+
+      <div class="inputArea__content">
+        <label for="day" id="ddLabel">Day</label>
+        <input type="number" class="inputField dayInput" id="dayInput" placeholder="DD">
+        <p class="errorArea" id="ddErr"></p>
+      </div>
+
+      <div class="inputArea__content">
+        <label for="month" id="mmLabel">Month</label>
+        <input type="number" id="monthInput" class="inputField monthInput" placeholder="MM">
+        <p class="errorArea" id="mmErr"></p>
+      </div>
+
+      <div class="inputArea__content">
+        <label for="year" id="yyyyLabel">Year</label>
+        <input type="number" id="yearInput" class="inputField yearInput" placeholder="YYYY">
+        <p class="errorArea" id="yyyyErr"></p>
+      </div>
+    </section>
+    <div class="lnBtn">
+      <hr>
+      <button id="actionBtn"><img src="assets/images/icon-arrow.svg" alt="call to action button" srcset=""></button>
+    </div>
+    <section class="resultArea">
+
+      <h1><span id="year">- -</span> years</h1>
+      <h1><span id="month">- -</span> months</h1>
+      <h1><span id="day">- -</span> days</h1>
+
+    </section>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
