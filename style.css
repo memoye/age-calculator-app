@@ -181,6 +181,7 @@ h1 {
     margin: auto !important;
     display: flex;
     gap: 1em;
+    justify-content: center;
   }
 
   input {
