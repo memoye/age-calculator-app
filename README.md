@@ -52,4 +52,4 @@ By attempting this challenge, my understanding of DOM manipulation leveled up a 
 - Twitter - [@memoye_io](https://www.twitter.com/memoye_io)
 
 ## Acknowledgments
-Thanks to [Prashant kumar Singh](https://www.frontendmentor.io/profile/pras75299) for doing a [PR](https://github.com/memoye/age-calculator-app/pulls?q=is%3Apr+is%3Aclosed) to solve a [responsiveness issue](https://github.com/memoye/age-calculator-app/issues/1) I raised.
+Thanks to [Prashant kumar Singh](https://www.frontendmentor.io/profile/pras75299) for doing a [PR](https://github.com/memoye/age-calculator-app/pulls?q=is%3Apr+is%3Aclosed) to solve a [responsiveness issue](https://github.com/memoye/age-calculator-app/issues/1) I had.
